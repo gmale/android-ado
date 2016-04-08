@@ -36,4 +36,4 @@ I - install the default APK
 
 
 `$ ado install`    
-
+installs the defualt APK onto the default device
