@@ -23,7 +23,7 @@ When you install an APK it sets common sense defaults including, the default APK
 2. TODO: complete this list
 
 ### Usage Examples
-`$ ado`    
+`$ ado -i`    
 enters interactive mode, which is great for multiple actions. In this mode, pressing single keys will intiate common actions.
 
 p - set the default package name. auto-complete to select the right one.    
@@ -37,3 +37,22 @@ I - install the default APK
 
 `$ ado install`    
 installs the defualt APK onto the default device
+
+
+
+
+Aliasing
+--------
+// TODO: reword this language borrowed from Hub (https://github.com/github/hub)
+
+Using ado feels best when it's aliased as `adb`. This is not dangerous; your
+_normal adb commands will all work_. ado merely adds some sugar.
+
+`ado alias` displays instructions for the current shell. With the `-s` flag, it
+outputs a script suitable for `eval`.
+
+You should place this command in your `.bash_profile` or `.zshrc` or other startup script:
+
+``` sh
+eval "$(hub alias -s)"
+```
